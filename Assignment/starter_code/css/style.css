@@ -6,23 +6,38 @@ Developer @GA in NYC
 */
 
 
+/*
+
+Awesome job on this assignment! Your layout is spot-on, and you used a ton of stuff we referenced in class. Well done. A few comments:
+
+- Make sure your classes would make sense to someone else reading your code. "rm" might make sense to you, but to another person they would have no idea what it refers to. Instead, write it out as read-more
+- On that note, try using more semantic class names. column1 and column2 work now, but if you were to change the order of the elements on your page while intending to keep the same styles, it wouldn't make sense anymore. I would rename them to be something like "article-container" and "side-navigation"
+- Make sure you remove any comments that aren't relevant, like the "Additional Styles" at the bottom
+- Fantastic job with indenting your HTML!! Some of the best I've seen in the class so far.
+- Try to use consistent spacing throughout your CSS; I would recommend adding a space between each class declaration to keep them separated and make the code more readable. Also, make sure you don't have extra spaces inside of your brackets
+- Awesome job using the pseudo selectors. You even used :hover on a non-link tag, which is great! You'll definitely want to use it for any <a> links, but you can use it on whatever you want.
+- You added a first-character class on a <span> for the drop cap, but if you wanted you could use the :first-letter pseudo selector!
+
+*/
+
+
 /******************************************
 /* SETUP
 /*******************************************/
 
 /* Box Model Hack */
 * {
-     box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
@@ -44,11 +59,11 @@ Developer @GA in NYC
 /*******************************************/
 
 body {
-    background-color:#f0efef;
-     color: #606161;
-     font-size: 300 24px;
-     line-height: 1.4;
-    font-family: 'Open Sans', sans-serif;
+  background-color:#f0efef;
+  color: #606161;
+  font-size: 300 24px;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .logo{
@@ -71,10 +86,10 @@ body {
   display:block;
 
 }
-.firstcharacter { 
-  float: left; 
+.firstcharacter {
+  float: left;
   font-size: 40px;
-  font-weight: 800; 
+  font-weight: 800;
 }
 .rm{
   font-size: 24px;
@@ -83,8 +98,8 @@ body {
 }
 
 .sidebarh{
-  color: #606161; 
-  font-size: 32px; 
+  color: #606161;
+  font-size: 32px;
   font-weight: 800;
 }
 .catlist{
@@ -102,7 +117,7 @@ body {
 .footertitle{
   color: #f9e42e;
   font-size: 24px;
-  font-weight: 600; 
+  font-weight: 600;
   height: 50px;
   margin:auto;
   padding-top: 40px;
@@ -143,7 +158,6 @@ header{
   height: 30px;
   margin-left: 40px;
   padding-top: 35px;
-
 }
 .navlist li{
   display:inline-block;
@@ -170,14 +184,12 @@ overflow: hidden;
 width: 100%;
 }
 .main{
-background-color: ;
-height:1450px;
-padding:4%;
-overflow: auto;
-width:100%;
-
+  background-color: ;
+  height:1450px;
+  padding:4%;
+  overflow: auto;
+  width:100%;
 }
-
 .column1{
   display:block;
   float: left;
@@ -185,7 +197,6 @@ width:100%;
   min-width: 61%;
   overflow: auto;
   width: 61%;
-  
 }
 .art1img, .art2img{
   max-width: 100%;
@@ -221,21 +232,16 @@ footer{
   background-color:#121212;
   height: 200px;
   width:100%;
-
 }
 .twitter{
   float: left;
-  padding-right:45px; 
+  padding-right:45px;
   padding-bottom:40px;
   text-align:center;
-
-
 }
 .fbook{
   float: left;
   text-align:center;
-  
-
 }
 .social{
   float: left;
@@ -244,7 +250,6 @@ footer{
   padding-top:50px;
   width:15%;
   max-width: 100%;
-
 }
 .copy{
   height: 20px;
@@ -252,11 +257,6 @@ footer{
   width:20%;
 }
 
-
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
-
-
-
